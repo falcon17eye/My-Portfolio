@@ -1,0 +1,77 @@
+/* ============================================
+   DESIGN TOKENS — Persona 5 Inspired
+   ============================================ */
+
+:root {
+  /* ---- Colors ---- */
+  --bg-primary:    #141515;
+  --bg-secondary:  #1E1F20;
+  --bg-tertiary:   #282A2B;
+  --text-primary:  #FFFFFF;
+  --text-secondary:#B0B0B0;
+  --text-muted:    #707070;
+
+  --accent-purple:       #9984D4;
+  --accent-purple-light: #B3A3E0;
+  --accent-purple-dark:  #7A68B8;
+  --accent-teal:         #43C59E;
+  --accent-teal-light:   #6AD4B5;
+  --accent-teal-dark:    #359B7A;
+
+  --accent-purple-glow:   rgba(153, 132, 212, 0.35);
+  --accent-teal-glow:     rgba(67, 197, 158, 0.35);
+  --accent-purple-subtle: rgba(153, 132, 212, 0.08);
+  --accent-teal-subtle:   rgba(67, 197, 158, 0.08);
+
+  /* ---- Typography ---- */
+  --font-display: 'Oswald', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --text-xs:   clamp(0.7rem, 0.8vw, 0.75rem);
+  --text-sm:   clamp(0.8rem, 0.9vw, 0.875rem);
+  --text-base: clamp(0.925rem, 1vw, 1rem);
+  --text-lg:   clamp(1.05rem, 1.2vw, 1.125rem);
+  --text-xl:   clamp(1.15rem, 1.5vw, 1.25rem);
+  --text-2xl:  clamp(1.4rem, 2vw, 1.5rem);
+  --text-3xl:  clamp(1.7rem, 2.5vw, 1.875rem);
+  --text-4xl:  clamp(2rem, 3vw, 2.25rem);
+  --text-5xl:  clamp(2.5rem, 4vw, 3rem);
+  --text-6xl:  clamp(3rem, 5vw, 3.75rem);
+  --text-hero: clamp(3.5rem, 8vw, 7rem);
+
+  /* ---- Spacing ---- */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* ---- Layout ---- */
+  --max-width:  1200px;
+  --nav-height: 70px;
+
+  /* ---- Transitions (P5 = fast, snappy, punchy) ---- */
+  --transition-fast:        150ms ease;
+  --transition-base:        300ms ease;
+  --transition-slow:        500ms ease;
+  --transition-p5:          400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-p5-snap:     300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-p5-dramatic: 600ms cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* ---- Shadows ---- */
+  --shadow-sm:     0 2px 4px rgba(0,0,0,0.3);
+  --shadow-md:     0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg:     0 8px 24px rgba(0,0,0,0.5);
+  --shadow-purple: 0 4px 24px var(--accent-purple-glow);
+  --shadow-teal:   0 4px 24px var(--accent-teal-glow);
+
+  /* ---- Z-Index ---- */
+  --z-base:    1;
+  --z-overlay: 10;
+  --z-nav:     100;
+  --z-modal:   1000;
+}

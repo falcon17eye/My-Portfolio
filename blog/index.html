@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Mohammad Ibrahim | Game Designer</title>
+  <meta name="description" content="Game design insights, breakdowns, and lessons learned by Mohammad Ibrahim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+  <nav class="nav" role="navigation"><div class="nav__inner"><a href="../index.html" class="nav__logo"><div class="nav__monogram">MI</div><span class="nav__logo-text">Mohammad Ibrahim</span></a><div class="nav__links"><a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="index.html" class="nav__link active">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a></div><button class="nav__hamburger" aria-label="Toggle menu"><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span></button></div><div class="nav__mobile-menu" role="menu"><a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="index.html" class="nav__link active">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a></div><div class="nav__mobile-overlay"></div></nav>
+
+  <main>
+    <!-- Blog Header -->
+    <div class="blog-header">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__number">✦</span>
+          <h1 class="section-header__title">Blog</h1>
+          <p class="section-header__subtitle">Thoughts on game design, breakdowns, and lessons learned.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="container">
+      <a href="my-game-design-process.html" class="blog-card animate-on-scroll" id="blog-post-1">
+        <div class="blog-card__image"></div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">April 20, 2026 · 6 min read · Game Design</div>
+          <h2 class="blog-card__title">My Game Design Process: From Concept to GDD</h2>
+          <p class="blog-card__excerpt">A walkthrough of how I approach game design — from the initial spark of an idea, through research and prototyping, to a polished game design document ready for production.</p>
+          <span class="blog-card__read-more">Read More →</span>
+        </div>
+      </a>
+
+      <a href="what-makes-combat-feel-good.html" class="blog-card animate-on-scroll delay-1" id="blog-post-2">
+        <div class="blog-card__image"></div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">April 12, 2026 · 8 min read · Analysis</div>
+          <h2 class="blog-card__title">What Makes Combat Feel Good? Breaking Down Game Feel</h2>
+          <p class="blog-card__excerpt">An analysis of what separates satisfying combat from clunky combat — examining hit-stop, screen shake, animation curves, and the invisible systems that make hitting things feel incredible.</p>
+          <span class="blog-card__read-more">Read More →</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top: var(--space-4xl);"><div class="container"><div class="footer__inner"><p class="footer__text">&copy; 2026 <span>Mohammad Ibrahim</span>. All rights reserved.</p></div></div></footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/animations.js"></script>
+</body>
+</html>

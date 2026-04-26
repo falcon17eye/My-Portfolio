@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shine Oh Sun — GDD | Mohammad Ibrahim</title>
+  <meta name="description" content="Shine Oh Sun — a cozy PS1-style radio station GDD. Run broadcasts, take calls, and keep the sun shining. Designed by Mohammad Ibrahim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo"><div class="nav__monogram">MI</div><span class="nav__logo-text">Mohammad Ibrahim</span></a>
+      <div class="nav__links">
+        <a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link active">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="../blog/index.html" class="nav__link">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu"><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span></button>
+    </div>
+    <div class="nav__mobile-menu" role="menu"><a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="../blog/index.html" class="nav__link">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a></div>
+    <div class="nav__mobile-overlay"></div>
+  </nav>
+
+  <main>
+    <section class="detail-hero">
+      <div class="detail-hero__bg detail-hero__bg--gdd"></div>
+      <div class="detail-hero__content">
+        <a href="../index.html#projects" class="detail-hero__back"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> Back to Projects</a>
+        <span class="detail-hero__tag detail-hero__tag--gdd">Game Design Document</span>
+        <h1 class="detail-hero__title">Shine Oh Sun</h1>
+        <p class="detail-hero__subtitle">A Cozy PS1 Radio Station Adventure.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="detail-meta animate-on-scroll">
+        <div class="detail-meta__item"><span class="detail-meta__label">Type</span><span class="detail-meta__value">GDD</span></div>
+        <div class="detail-meta__item"><span class="detail-meta__label">Genre</span><span class="detail-meta__value">Narrative / Cozy</span></div>
+        <div class="detail-meta__item"><span class="detail-meta__label">Focus</span><span class="detail-meta__value">Story & Systems</span></div>
+      </div>
+
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Cover Art</h2>
+        <div class="detail-gallery" style="grid-template-columns: 1fr;">
+          <div class="detail-gallery__item" style="aspect-ratio: auto; border: none; background: transparent; cursor: default;">
+            <img src="../assets/images/projects/shine-oh-sun-cover.jpg" alt="Shine Oh Sun Cover Art" style="width: 100%; height: auto; display: block; border: 1px solid rgba(255,255,255,0.05);">
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Concept Overview</h2>
+        <p>Step into the booth of a small-town radio station in this cozy PS1-inspired adventure. As the lead broadcaster, your goal isn't just to play music, but to cultivate a sense of community and warmth through the airwaves.</p>
+        <p>Manage your daily broadcasts, curate relaxing playlists, and engage with eccentric callers as you become the voice that helps the town start their day. The GDD explores how low-fidelity aesthetics and tactile interactions create a uniquely comforting atmosphere.</p>
+      </div>
+
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Core Design Pillars</h2>
+        <ul>
+          <li><strong>Tactile Interaction:</strong> Every button, slider, and dial in the PS1-style booth has a satisfying, physical feel, emphasizing the joy of the broadcast process.</li>
+          <li><strong>Community Connection:</strong> Through phone-ins and listener requests, the player builds meaningful, low-stakes relationships with the town's inhabitants.</li>
+          <li><strong>Atmospheric Zen:</strong> A focus on relaxing soundscapes, soft lighting, and a gentle progression system that avoids traditional fail-states.</li>
+          <li><strong>Retro Aesthetics:</strong> Utilizing the "low-poly" PS1 look to evoke nostalgia and a sense of "digital comfort."</li>
+        </ul>
+      </div>
+
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Document Preview</h2>
+        <div class="detail-video">
+          <div class="detail-video__placeholder">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+            <p>Full GDD document preview coming soon</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Download</h2>
+        <div class="detail-links">
+          <a href="https://docs.google.com/document/d/1KRazExuS-NZZbkZtVwT5lKF51JkFK9fZXj4k_L5NZEw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Full GDD (Google Docs)</a>
+        </div>
+      </div>
+
+      <div class="detail-nav animate-on-scroll">
+        <a href="pong.html" class="detail-nav__link"><span class="detail-nav__direction">← Previous</span><span class="detail-nav__title">What Can Possibly Go PONG</span></a>
+        <a href="dark-places.html" class="detail-nav__link detail-nav__link--next"><span class="detail-nav__direction">Next GDD →</span><span class="detail-nav__title">Dark Places</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer__inner"><p class="footer__text">&copy; 2026 <span>Mohammad Ibrahim</span>. All rights reserved.</p></div></div></footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/animations.js"></script>
+</body>
+</html>

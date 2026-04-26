@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wings of Peace: A Pigeon's Journey — Mohammad Ibrahim | Game Designer</title>
+  <meta name="description" content="Wings of Peace — a narrative-driven adventure game submitted to Egypt Game Jam 2024. Play as a messenger pigeon carrying hope across war-torn kingdoms.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Home">
+        <div class="nav__monogram">MI</div>
+        <span class="nav__logo-text">Mohammad Ibrahim</span>
+      </a>
+      <div class="nav__links">
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="../index.html#about" class="nav__link">About</a>
+        <a href="../index.html#projects" class="nav__link active">Projects</a>
+        <a href="../index.html#skills" class="nav__link">Skills</a>
+        <a href="../blog/index.html" class="nav__link">Blog</a>
+        <a href="../resume.html" class="nav__link">Resume</a>
+        <a href="../index.html#contact" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" role="menu">
+      <a href="../index.html" class="nav__link">Home</a>
+      <a href="../index.html#about" class="nav__link">About</a>
+      <a href="../index.html#projects" class="nav__link">Projects</a>
+      <a href="../index.html#skills" class="nav__link">Skills</a>
+      <a href="../blog/index.html" class="nav__link">Blog</a>
+      <a href="../resume.html" class="nav__link">Resume</a>
+      <a href="../index.html#contact" class="nav__link">Contact</a>
+    </div>
+    <div class="nav__mobile-overlay"></div>
+  </nav>
+
+  <main>
+    <!-- HERO BANNER -->
+    <section class="detail-hero">
+      <div class="detail-hero__bg detail-hero__bg--project"></div>
+      <div class="detail-hero__content">
+        <a href="../index.html#projects" class="detail-hero__back">
+          <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          Back to Projects
+        </a>
+        <span class="detail-hero__tag detail-hero__tag--project">Full Project</span>
+        <h1 class="detail-hero__title">Wings of Peace</h1>
+        <p class="detail-hero__subtitle">Playing as a homing pigeon, you must reunite the two kingdoms before war ruins everything.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="container">
+      <!-- Metadata -->
+      <div class="detail-meta animate-on-scroll">
+        <div class="detail-meta__item">
+          <span class="detail-meta__label">Role</span>
+          <span class="detail-meta__value">Team Manager &amp; Game Designer</span>
+        </div>
+        <div class="detail-meta__item">
+          <span class="detail-meta__label">Genre</span>
+          <span class="detail-meta__value">Narrative Adventure</span>
+        </div>
+        <div class="detail-meta__item">
+          <span class="detail-meta__label">Context</span>
+          <span class="detail-meta__value">Egypt Game Jam 2024 — ITI</span>
+        </div>
+        <div class="detail-meta__item">
+          <span class="detail-meta__label">Tags</span>
+          <span class="detail-meta__value">Story / Singleplayer</span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Overview</h2>
+        <p>"Wings of Peace" is a captivating narrative-driven game where players assume the role of a courageous messenger pigeon caught in the midst of a war-torn world. As the avian protagonist, your mission is to deliver vital messages between two warring nations, ultimately striving to bring about reconciliation and peace.</p>
+        <p>Set in a beautifully rendered world ravaged by conflict, the game offers a unique perspective on the consequences of war and the power of communication in fostering understanding and harmony. With its emphasis on storytelling and emotional depth, "Wings of Peace" immerses players in a poignant tale of hope, sacrifice, and the enduring spirit of compassion.</p>
+      </div>
+
+      <!-- Cover Art -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Cover Art</h2>
+        <div class="detail-gallery" style="grid-template-columns: 1fr;">
+          <div class="detail-gallery__item" style="aspect-ratio: auto; border: none; background: transparent; cursor: default;">
+            <img src="../assets/images/projects/wings-of-peace-cover.jpg" alt="Wings of Peace Cover Art" style="width: 100%; height: auto; display: block; border: 1px solid rgba(255,255,255,0.05);">
+          </div>
+        </div>
+      </div>
+
+      <!-- Gameplay Features -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Gameplay Features</h2>
+        <ul>
+          <li><strong>Free Flight Navigation:</strong> Full 3D flight across a war-torn world — navigate through skies, ruins, and no-man's-land to reach your destination</li>
+          <li><strong>Message Delivery System:</strong> Interact with points of interest to deliver letters that gradually shift the tide of war</li>
+          <li><strong>Narrative Focus:</strong> Every delivery advances a story of hope — the game's mechanics directly serve its emotional message</li>
+          <li><strong>Atmospheric World:</strong> A beautifully rendered environment where the conflict is visible on the land below you</li>
+        </ul>
+      </div>
+
+      <!-- Controls -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Controls</h2>
+        <ul>
+          <li><strong>Flight:</strong> WASD — Navigate the skies</li>
+          <li><strong>Elevate:</strong> Shift — Go higher</li>
+          <li><strong>Land:</strong> Ctrl — Go lower</li>
+          <li><strong>Interact:</strong> E — Land on points of interest</li>
+        </ul>
+      </div>
+
+      <!-- My Role -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">My Role &amp; Contributions</h2>
+        <ul>
+          <li><strong>Team Manager:</strong> Led a team of 8 across programming, art, animation, music, and design under game jam conditions</li>
+          <li><strong>Game Designer:</strong> Designed the core narrative loop — linking flight mechanics to story progression so each delivery felt emotionally weighted</li>
+          <li>Defined the pacing of message deliveries to build tension and resolution as the player works toward peace</li>
+          <li>Coordinated across disciplines (programming, 3D modeling, animation, music) to maintain a unified vision under tight constraints</li>
+        </ul>
+      </div>
+
+      <!-- Design Challenges -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Design Challenges</h2>
+        <p>The central design challenge was making the act of <em>flying and delivering</em> feel emotionally resonant — not just mechanically functional. A pigeon is a fragile, humble creature, and the game needed to make the player feel the weight of what they carry. Balancing free-form flight exploration with a clear narrative direction, all under a jam deadline with a large team, required careful scope management and constant communication.</p>
+      </div>
+
+      <!-- Team -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Team</h2>
+        <ul>
+          <li><strong>Team Manager &amp; Game Designer:</strong> Mohammad Ibrahim</li>
+          <li><strong>Programmers:</strong> Eslam Samir, Mahmoud Adel, Yassin Tarek, Ammar Yasser</li>
+          <li><strong>Music Composer:</strong> Andrew Ashraf</li>
+          <li><strong>3D Modeler:</strong> Ahmed Mohamed Refaat</li>
+          <li><strong>Animator:</strong> Bader Gamel</li>
+          <li><strong>2D Artist &amp; Concept:</strong> Sally Ali, Nourhan</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="detail-section animate-on-scroll">
+        <h2 class="detail-section__title">Links</h2>
+        <div class="detail-links">
+          <a href="https://eslam980.itch.io/wings-of-peace" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Play on Itch.io</a>
+          <a href="https://itch.io/jam/egypt-game-jam-2024/rate/2545269" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Egypt Game Jam 2024 Entry</a>
+        </div>
+      </div>
+
+      <!-- Prev/Next Nav -->
+      <div class="detail-nav animate-on-scroll">
+        <a href="spinach.html" class="detail-nav__link">
+          <span class="detail-nav__direction">← Previous Project</span>
+          <span class="detail-nav__title">Spinach</span>
+        </a>
+        <a href="shine-oh-sun.html" class="detail-nav__link detail-nav__link--next">
+          <span class="detail-nav__direction">Next: GDD →</span>
+          <span class="detail-nav__title">Shine Oh Sun</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; 2026 <span>Mohammad Ibrahim</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/animations.js"></script>
+</body>
+</html>

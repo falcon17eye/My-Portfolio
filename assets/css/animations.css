@@ -1,0 +1,118 @@
+/* ============================================
+   ANIMATIONS — Persona 5 Style
+   ============================================ */
+
+/* --- Keyframes --- */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px) skewX(5deg); }
+  to   { opacity: 1; transform: translateX(0) skewX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(80px) skewX(-5deg); }
+  to   { opacity: 1; transform: translateX(0) skewX(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes skewIn {
+  0%   { opacity: 0; transform: skewX(-20deg) translateX(-50px); }
+  60%  { transform: skewX(4deg) translateX(5px); }
+  100% { opacity: 1; transform: skewX(0) translateX(0); }
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50%      { transform: translateY(12px) rotate(45deg); }
+}
+
+@keyframes glitchFlicker {
+  0%, 100% { opacity: 1; transform: translate(0); }
+  10%      { opacity: 0.8; transform: translate(-2px, 1px); }
+  20%      { opacity: 1; transform: translate(1px, -1px); }
+  30%      { opacity: 0.85; transform: translate(-1px, 0); }
+  40%      { opacity: 1; transform: translate(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 8px var(--accent-purple-glow); }
+  50%      { box-shadow: 0 0 25px var(--accent-purple-glow), 0 0 50px var(--accent-purple-glow); }
+}
+
+@keyframes diagonalSlide {
+  from { transform: translateX(-100%) skewX(-15deg); }
+  to   { transform: translateX(0) skewX(-15deg); }
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to   { width: 60px; }
+}
+
+/* --- Scroll-Triggered Animation Classes --- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-p5-dramatic),
+              transform var(--transition-p5-dramatic);
+}
+
+.animate-on-scroll.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll.from-left {
+  transform: translateX(-60px) skewX(3deg);
+}
+.animate-on-scroll.from-left.animate-visible {
+  transform: translateX(0) skewX(0);
+}
+
+.animate-on-scroll.from-right {
+  transform: translateX(60px) skewX(-3deg);
+}
+.animate-on-scroll.from-right.animate-visible {
+  transform: translateX(0) skewX(0);
+}
+
+.animate-on-scroll.scale-in {
+  transform: scale(0.92);
+}
+.animate-on-scroll.scale-in.animate-visible {
+  transform: scale(1);
+}
+
+/* --- Stagger Delays --- */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }
+.delay-5 { transition-delay: 500ms; }
+.delay-6 { transition-delay: 600ms; }
+.delay-7 { transition-delay: 700ms; }
+.delay-8 { transition-delay: 800ms; }
+
+/* --- Accessibility: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

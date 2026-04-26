@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Design Process — Blog | Mohammad Ibrahim</title>
+  <meta name="description" content="A walkthrough of how I approach game design — from the initial spark of an idea to a polished game design document.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+  <nav class="nav" role="navigation"><div class="nav__inner"><a href="../index.html" class="nav__logo"><div class="nav__monogram">MI</div><span class="nav__logo-text">Mohammad Ibrahim</span></a><div class="nav__links"><a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="index.html" class="nav__link active">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a></div><button class="nav__hamburger" aria-label="Toggle menu"><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span></button></div><div class="nav__mobile-menu" role="menu"><a href="../index.html" class="nav__link">Home</a><a href="../index.html#about" class="nav__link">About</a><a href="../index.html#projects" class="nav__link">Projects</a><a href="../index.html#skills" class="nav__link">Skills</a><a href="index.html" class="nav__link">Blog</a><a href="../resume.html" class="nav__link">Resume</a><a href="../index.html#contact" class="nav__link">Contact</a></div><div class="nav__mobile-overlay"></div></nav>
+
+  <main>
+    <article>
+      <div class="post-header">
+        <div class="container">
+          <a href="index.html" class="detail-hero__back" style="margin-bottom: var(--space-xl); display: inline-flex;">
+            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Back to Blog
+          </a>
+          <div class="post-header__meta">April 20, 2026 · 6 min read · Game Design</div>
+          <h1 class="post-header__title">My Game Design Process: From Concept to GDD</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="post-content">
+          <p>Every game starts with a spark — a "what if?" moment that makes you sit up straighter. But the journey from that initial spark to a document someone can actually build from? That's where the real design work happens.</p>
+
+          <p>In this post, I'll walk you through my personal process for turning game ideas into structured, production-ready Game Design Documents.</p>
+
+          <h2>Step 1: The Concept Seed</h2>
+          <p>I keep a running list of game ideas — most of them terrible, some of them interesting. The key is volume. I don't judge ideas when I write them down; I judge them later when I'm looking for something to develop further.</p>
+
+          <p>A good concept seed answers one question: <strong>"What is the core experience I want the player to have?"</strong> Not "what are the mechanics" or "what's the story" — but what should the player <em>feel</em>?</p>
+
+          <h2>Step 2: Research & References</h2>
+          <p>Before I design anything, I play games in the same space. Not to copy — but to understand what's been done, what works, and where there's room to innovate. I take notes on:</p>
+          <ul>
+            <li>What mechanics create the feelings I'm targeting</li>
+            <li>Where existing games fall short of their promise</li>
+            <li>What UI/UX patterns players already understand</li>
+            <li>How other designers solved similar problems</li>
+          </ul>
+
+          <h2>Step 3: Core Loop Definition</h2>
+          <p>This is the most critical step. I define the core gameplay loop before anything else — the 30-second action that the player will repeat thousands of times. If this loop isn't inherently satisfying, no amount of content will save the game.</p>
+
+          <p>I use <strong>Machinations</strong> to model my loops visually, testing resource flows and feedback cycles before writing a single line of code.</p>
+
+          <h2>Step 4: Systems Mapping</h2>
+          <p>Once the core loop is solid, I map out how supporting systems interact with it. Economy, progression, narrative beats — everything needs to feed back into making that core loop more interesting over time.</p>
+
+          <p>I use <strong>Miro</strong> boards for this, creating visual maps of how systems connect. It's like drawing the circulatory system of the game.</p>
+
+          <h2>Step 5: The GDD</h2>
+          <p>Only now do I start writing the formal document. By this point, I have clarity on what the game is, how it works, and why it's fun. The GDD becomes a communication tool — a contract between design intent and implementation.</p>
+
+          <blockquote>A GDD isn't a novel. It's a blueprint. Every word should help someone build the game correctly.</blockquote>
+
+          <h2>What I've Learned</h2>
+          <p>The biggest lesson? <strong>Design is iteration.</strong> My first version of anything is wrong. The second is better. The fifth is usually where the real game reveals itself. The process isn't linear — it's a spiral, with each pass adding depth and removing noise.</p>
+
+          <p>If you're starting your own game design journey, my advice is simple: document everything, playtest early, and never fall in love with your first idea.</p>
+        </div>
+
+        <div class="post-nav">
+          <div></div>
+          <a href="what-makes-combat-feel-good.html" class="btn btn-secondary">Next Post →</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer__inner"><p class="footer__text">&copy; 2026 <span>Mohammad Ibrahim</span>. All rights reserved.</p></div></div></footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/animations.js"></script>
+</body>
+</html>

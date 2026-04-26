@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Mohammad Ibrahim | Game Designer</title>
+  <meta name="description" content="Resume of Mohammad Ibrahim — all-around Game Designer. View or download my CV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__monogram">MI</div><span class="nav__logo-text">Mohammad Ibrahim</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="index.html#about" class="nav__link">About</a>
+        <a href="index.html#projects" class="nav__link">Projects</a>
+        <a href="index.html#skills" class="nav__link">Skills</a>
+        <a href="blog/index.html" class="nav__link">Blog</a>
+        <a href="resume.html" class="nav__link active">Resume</a>
+        <a href="index.html#contact" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu"><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span><span class="nav__hamburger-line"></span></button>
+    </div>
+    <div class="nav__mobile-menu" role="menu">
+      <a href="index.html" class="nav__link">Home</a><a href="index.html#about" class="nav__link">About</a><a href="index.html#projects" class="nav__link">Projects</a><a href="index.html#skills" class="nav__link">Skills</a><a href="blog/index.html" class="nav__link">Blog</a><a href="resume.html" class="nav__link active">Resume</a><a href="index.html#contact" class="nav__link">Contact</a>
+    </div>
+    <div class="nav__mobile-overlay"></div>
+  </nav>
+
+  <main>
+    <div class="resume-page">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-header__number">✦</span>
+          <h1 class="section-header__title">Resume</h1>
+          <p class="section-header__subtitle">View my qualifications or download a copy.</p>
+        </div>
+
+        <!-- Download Actions -->
+        <div class="resume-actions animate-on-scroll delay-1">
+          <a href="assets/resume/Mohammad_Ibrahim_Resume.pdf" download class="btn btn-primary" id="resume-download">
+            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;margin-right:4px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download Resume (PDF)
+          </a>
+          <a href="assets/resume/Mohammad_Ibrahim_Resume.pdf" target="_blank" class="btn btn-secondary" id="resume-open">
+            Open in New Tab
+          </a>
+        </div>
+
+        <!-- PDF Preview -->
+        <div class="resume-preview animate-on-scroll delay-2">
+          <!-- When you have a PDF, it will embed here -->
+          <div style="display:flex;align-items:center;justify-content:center;height:80vh;flex-direction:column;gap:var(--space-lg);">
+            <svg viewBox="0 0 24 24" style="width:64px;height:64px;fill:var(--accent-purple);opacity:0.4;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+            <p style="font-family:var(--font-display);font-size:var(--text-xl);text-transform:uppercase;color:var(--text-muted);letter-spacing:0.1em;">Resume PDF Preview</p>
+            <p style="color:var(--text-muted);font-size:var(--text-sm);max-width:400px;text-align:center;">Place your resume PDF at <code style="color:var(--accent-teal);background:var(--bg-tertiary);padding:2px 6px;">assets/resume/Mohammad_Ibrahim_Resume.pdf</code> and it will display here.</p>
+          </div>
+        </div>
+
+        <!-- Fallback: HTML Resume Highlights -->
+        <div class="section" style="padding-top:var(--space-3xl);">
+          <h2 class="detail-section__title animate-on-scroll">Quick Overview</h2>
+
+          <div class="detail-section animate-on-scroll delay-1">
+            <h3 class="detail-section__title">Profile</h3>
+            <p>All-around Game Designer with a passion for creating meaningful player experiences. Specializing in systems design, level design, game feel, and comprehensive design documentation.</p>
+          </div>
+
+          <div class="detail-section animate-on-scroll delay-2">
+            <h3 class="detail-section__title">Skills</h3>
+            <div class="skills__badges" style="margin-top:var(--space-md);">
+              <div class="skill-badge">Unity Engine</div>
+              <div class="skill-badge">C#</div>
+              <div class="skill-badge">Machinations</div>
+              <div class="skill-badge">Miro</div>
+              <div class="skill-badge">Google Docs</div>
+              <div class="skill-badge">Excel</div>
+              <div class="skill-badge">ClickUp</div>
+              <div class="skill-badge">Level Design</div>
+              <div class="skill-badge">Systems Design</div>
+              <div class="skill-badge">Game Feel</div>
+              <div class="skill-badge">UI/UX Design</div>
+              <div class="skill-badge">Narrative Design</div>
+              <div class="skill-badge">Balancing</div>
+            </div>
+          </div>
+
+          <div class="detail-section animate-on-scroll delay-3">
+            <h3 class="detail-section__title">Projects</h3>
+            <ul>
+              <li><strong>Z Arena</strong> — Competitive arena game with strategic depth (Unity, Game Designer)</li>
+              <li><strong>What Can Possibly Go PONG</strong> — Creative twist on the classic Pong (Unity, Game Designer)</li>
+              <li><strong>Signals Of Siren</strong> — Narrative-driven GDD exploring consequential player choices</li>
+              <li><strong>Project Pyramid</strong> — Systems design GDD with interconnected game loops</li>
+              <li><strong>Project Vectorian Balloons</strong> — Physics-based puzzle GDD with unique art direction</li>
+              <li><strong>Dark Places</strong> — Atmospheric horror GDD focused on tension and environmental storytelling</li>
+            </ul>
+          </div>
+
+          <div class="detail-section animate-on-scroll delay-4">
+            <h3 class="detail-section__title">Connect</h3>
+            <div class="detail-links">
+              <a href="https://www.linkedin.com/in/mohmed-ibrahim-661569291/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://itch.io/profile/falcon-eye" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M3.13 1.34C2.13 1.92 1 3.62 1 4.78v1.03c0 1.47.85 2.74 2.01 2.74 1.16 0 2.12-.95 2.12-2.12 0 1.17.85 2.12 2.01 2.12s2.12-.95 2.12-2.12c0 1.17.72 2.12 1.87 2.12h.74c1.15 0 1.87-.95 1.87-2.12 0 1.17.97 2.12 2.12 2.12 1.16 0 2.01-.95 2.01-2.12 0 1.17.97 2.12 2.12 2.12C21.15 8.55 23 7.28 23 5.81V4.78c0-1.16-1.13-2.86-2.13-3.44H3.13z"/></svg>
+                Itch.io
+              </a>
+              <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer__inner"><p class="footer__text">&copy; 2026 <span>Mohammad Ibrahim</span>. All rights reserved.</p></div></div></footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>
